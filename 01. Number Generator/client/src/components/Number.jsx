@@ -24,8 +24,8 @@ const Number = ({item, list}) => {
     } 
 
     return (
-    <div className="bg-black w-32 h-32 text-white flex items-center
-    justify-center text-3xl" style={{backgroundColor: handleColor(item.numb)}}>
+    <div className="bg-black w-[90px] h-[90px] text-white flex items-center
+    justify-center text-3xl sm:w-32 sm:h-32" style={{backgroundColor: handleColor(item.numb)}}>
         {item.numb}
     </div>
   )

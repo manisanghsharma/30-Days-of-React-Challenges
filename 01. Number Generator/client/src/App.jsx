@@ -17,10 +17,10 @@ function App() {
   }, [num])
 
   return (
-    <div className='w-full flex flex-col justify-center items-center gap-10'>
-      <h1 className='mt-14 text-5xl font-semibold'>30 Days of React</h1>
+    <div className='w-full flex flex-col justify-center items-center gap-7'>
+      <h1 className='mt-5 text-[40px] font-semibold md:text-5xl md:mt-14'>30 Days of React</h1>
       <h2 className='text-2xl'>Number Generator</h2>
-      <div className=' mt-3 grid grid-cols-8 w-fit gap-[1px]'>
+      <div className='mt-3 grid grid-cols-4 w-fit gap-[1px] md:grid-cols-5 lg:grid-cols-8'>
         {list && (
           list.map(item => (
               <Number key={item.numb} list={list} item={item}/>

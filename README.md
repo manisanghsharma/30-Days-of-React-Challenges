@@ -7,3 +7,4 @@ This repo contains my solutions to the 30 Days of React Challenges.
 
 ![Number Generator](https://i.imgur.com/V5s22Oa.png)
 
+[Number Generator](https://number-generator-manisangh.netlify.app/)
