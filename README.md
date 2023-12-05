@@ -8,3 +8,8 @@ This repo contains my solutions to the 30 Days of React Challenges.
 ![Number Generator](https://i.imgur.com/V5s22Oa.png)
 
 [Number Generator](https://number-generator-manisangh.netlify.app/)
+
+## 02. Ten Most Populous Countries
+![Ten Most Populous Countries](https://i.imgur.com/clVkyk2.png)
+
+[Ten Most Populous Countries](https://world-population-manisangh.netlify.app/)
