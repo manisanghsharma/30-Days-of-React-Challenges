@@ -4,14 +4,17 @@ import {CopyToClipboard} from "react-copy-to-clipboard"
 const CopyBtn = ({color, setCopy}) => {
   
   return (
-		<CopyToClipboard text={color.color} >
-			<div className='p-3 hover:bg-[#0000006c] flex items-center justify-center transition-all cursor-pointer rounded-full'>
-				<Clipboard size={25} color='white' onClick={() => {
+		<CopyToClipboard text={color.color}>
+			<div
+				onClick={() => {
 					setCopy(0);
 					setTimeout(() => {
-						setCopy(1)
-					}, 2500)
-				}}/>
+						setCopy(1);
+					}, 2500);
+				}}
+				className='p-3 hover:bg-[#0000006c] flex items-center justify-center transition-all cursor-pointer rounded-full'
+			>
+				<Clipboard size={25} color='white' />
 			</div>
 		</CopyToClipboard>
 	);
