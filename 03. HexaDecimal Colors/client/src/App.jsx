@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Card from './components/Card';
+import Input from './components/Input';
 
 function App() {
   const [colors, setColors] = useState([]);
@@ -17,10 +18,12 @@ function App() {
   }, [])
 
   return (
-    <div className='flex flex-col items-center justify-center '>
+    <div className='flex flex-col items-center justify-center'>
       <h1 className='text-6xl font-semibold mt-10'>30 Days Of React</h1>
       <h2 className='text-4xl mt-5'>Hexadecimal Colors</h2>
-      <div className='grid grid-cols-3 gap-3 mt-10 sm:grid-cols-4 lg:grid-cols-6'>
+      <Input colors={colors} setColors={setColors}/>
+      <div className='grid grid-cols-3 gap-3 sm:grid-cols-4 lg:grid-cols-6'>
+
         {colors.map(color => (
           <Card color={color} colors={colors} setColors={setColors}/>
         ))}
