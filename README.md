@@ -13,3 +13,8 @@ This repo contains my solutions to the 30 Days of React Challenges.
 ![Ten Most Populous Countries](https://i.imgur.com/clVkyk2.png)
 
 [Ten Most Populous Countries](https://world-population-manisangh.netlify.app/)
+
+## 03. Hex Color Generator
+
+![Hex Color Generator](https://i.imgur.com/AQ0xn0o.png)
+[Hex Color Generator](https://hex-color-generator-manisangh.netlify.app/)
