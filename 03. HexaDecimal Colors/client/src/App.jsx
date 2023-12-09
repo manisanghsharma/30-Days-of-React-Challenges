@@ -20,7 +20,7 @@ function App() {
 	}, []);
 
 	return (
-		<div className='flex flex-col items-center justify-center mb-[13px]'>
+		<div className='flex flex-col items-center justify-center mb-[1rem]'>
 			<h1 className='text-4xl font-semibold mt-10 sm:text-6xl'>30 Days Of React</h1>
 			<h2 className='text-2xl mt-5 sm:text-4xl'>Hexadecimal Colors</h2>
 			<Input colors={colors} setColors={setColors} />

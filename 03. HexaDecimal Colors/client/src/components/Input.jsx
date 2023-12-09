@@ -4,7 +4,7 @@ const Input = ({ colors, setColors }) => {
 	const [search, setSearch] = useState("");
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		if (search) {
+		if (+search) {
 			const arr = [...Array(+search).keys()].map((id) => {
 				const randHex = "#000000".replace(/0/g, function () {
 					return (~~(Math.random() * 16)).toString(16);
