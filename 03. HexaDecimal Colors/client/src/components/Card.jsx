@@ -7,11 +7,11 @@ const Card = ({color}) => {
     
   return (
 		<div
-			className='w-[150px] h-[150px] rounded-lg flex flex-col 
-    items-center justify-start gap-3'
+			className='w-[120px] h-[120px] rounded-lg flex flex-col 
+    items-center justify-center gap-3 sm:w-[150px] sm:h-[150px]'
 			style={{ backgroundColor: color.color }}
 		>
-			<p className='text-white text-xl font-medium mt-8'>{color.color}</p>
+			<p className='text-white text-xl font-medium'>{color.color}</p>
 			{copy ? (
 				<CopyBtn color={color} setCopy={setCopy} />
 			) : (

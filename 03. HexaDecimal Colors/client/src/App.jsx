@@ -6,7 +6,7 @@ function App() {
 	const [colors, setColors] = useState([]);
 
 	useEffect(() => {
-		const arr = [...Array(27).keys()].map((id) => {
+		const arr = [...Array(30).keys()].map((id) => {
 			const randHex = "#000000".replace(/0/g, function () {
 				return (~~(Math.random() * 16)).toString(16);
 			});
@@ -20,9 +20,9 @@ function App() {
 	}, []);
 
 	return (
-		<div className='flex flex-col items-center justify-center'>
-			<h1 className='text-6xl font-semibold mt-10'>30 Days Of React</h1>
-			<h2 className='text-4xl mt-5'>Hexadecimal Colors</h2>
+		<div className='flex flex-col items-center justify-center mb-[13px]'>
+			<h1 className='text-4xl font-semibold mt-10 sm:text-6xl'>30 Days Of React</h1>
+			<h2 className='text-2xl mt-5 sm:text-4xl'>Hexadecimal Colors</h2>
 			<Input colors={colors} setColors={setColors} />
 			<div className='grid grid-cols-3 gap-3 sm:grid-cols-4 lg:grid-cols-6'>
 				{colors.map((color) => (
